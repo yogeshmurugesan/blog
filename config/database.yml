@@ -15,10 +15,10 @@ default: &default
   pool: 5
   username: root
   password: root
-  socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 development:
   <<: *default
+  socket: /Applications/MAMP/tmp/mysql/mysql.sock
   database: sd2aj6ky6qwo_development
 
 # Warning: The database defined as "test" will be erased and
@@ -51,4 +51,5 @@ production:
   <<: *default
   database: sd2aj6ky6qwo_production
   username: blog
+  host: localhost
   # password: <%= ENV['BLOG_DATABASE_PASSWORD'] %>
