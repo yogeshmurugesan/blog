@@ -1,0 +1,176 @@
+/* surrounding tag container */
+/* line 3, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor {
+  list-style-type: none;
+  padding: 0 5px 0 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #eee;
+  cursor: text;
+  font: normal 14px sans-serif;
+  color: #555;
+  background: #fff;
+}
+
+/* core styles usually need no change */
+/* line 9, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor li {
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 3px 0;
+  line-height: 1.5;
+}
+
+/* line 10, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor div {
+  float: left;
+  padding: 0 4px;
+}
+
+/* line 11, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor .placeholder {
+  padding: 0 8px;
+  color: #bbb;
+}
+
+/* line 12, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor .tag-editor-spacer {
+  padding: 0;
+  width: 8px;
+  overflow: hidden;
+  color: transparent;
+  background: none;
+}
+
+/* line 13, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor input {
+  vertical-align: inherit;
+  border: 0;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: text;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  box-shadow: none;
+  background: none;
+}
+
+/* hide original input field or textarea visually to allow tab navigation */
+/* line 19, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor-hidden-src {
+  position: absolute !important;
+  left: -99999px;
+}
+
+/* hide IE10 "clear field" X */
+/* line 21, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor ::-ms-clear {
+  display: none;
+}
+
+/* tag style */
+/* line 24, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor .tag-editor-tag {
+  padding-left: 5px;
+  color: #46799b;
+  background: #e0eaf1;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px 0 0 2px;
+}
+
+/* delete icon */
+/* line 30, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor .tag-editor-delete {
+  cursor: pointer;
+  padding-right: 5px;
+  border-radius: 0 2px 2px 0;
+}
+
+/* line 31, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor .tag-editor-delete i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  vertical-align: middle;
+  position: relative;
+  top: -4px;
+}
+
+/* line 35, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor .tag-editor-delete:hover i {
+  color: #a94442;
+}
+
+/* line 36, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor .tag-editor-tag.active + .tag-editor-delete,
+.tag-editor .tag-editor-tag.active + .tag-editor-delete i {
+  cursor: text;
+}
+
+/* line 39, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.tag-editor .tag-editor-tag.active {
+  background: none !important;
+}
+
+/* jQuery UI autocomplete - code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css */
+/* line 42, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.ui-autocomplete {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: default;
+  font-size: 14px;
+}
+
+/* line 43, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.ui-front {
+  z-index: 9999;
+}
+
+/* line 44, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.ui-menu {
+  list-style: none;
+  padding: 1px;
+  margin: 0;
+  display: block;
+  outline: none;
+}
+
+/* line 45, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.ui-menu .ui-menu-item a {
+  text-decoration: none;
+  display: block;
+  padding: 2px .4em;
+  line-height: 1.4;
+  min-height: 0;
+  /* support: IE7 */
+}
+
+/* line 46, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.ui-widget-content {
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #555;
+}
+
+/* line 47, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.ui-widget-content a {
+  color: #46799b;
+}
+
+/* line 48, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  background: #e0eaf1;
+}
+
+/* line 50, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/tageditor/_jquery.tag-editor.css.scss */
+.ui-helper-hidden-accessible {
+  display: none;
+}

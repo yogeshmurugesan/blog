@@ -1,0 +1,31 @@
+/* line 2, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/widgets.css.scss */
+#content-widget .panel-widget {
+  cursor: move;
+}
+/* line 4, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/widgets.css.scss */
+#content-widget .panel-widget, #content-widget .panel-widget * {
+  color: #fff;
+}
+/* line 6, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/widgets.css.scss */
+#content-widget .panel-widget .shortcode {
+  cursor: default;
+  width: 100%;
+}
+
+/* line 13, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/widgets.css.scss */
+#content-sidebar .sidebar-body {
+  min-height: 150px;
+}
+/* line 15, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/widgets.css.scss */
+#content-sidebar .sidebar-body .panel-default:hover {
+  cursor: move;
+}
+/* line 19, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/widgets.css.scss */
+#content-sidebar form {
+  overflow: hidden;
+}
+
+/* line 24, /Users/inkoop/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/camaleon_cms-2.4.3.2/app/assets/stylesheets/camaleon_cms/admin/widgets.css.scss */
+.ui-draggable-dragging {
+  z-index: 999999999;
+}
